@@ -1,14 +1,20 @@
-# include <stdio.h>
+#include <stdio.h>
 int char_to_ascii(char caracter)
 {
-    int ascii = caracter;
+    char ascii;
+    if ( caracter>='A' && caracter <= 'z')
+    {
+        ascii = caracter;
+    }
+    else if (caracter >= 'a' && caracter <= 'z')
+    {
+        ascii = caracter
+    }
     return ascii;
+    
 }
 int main()
 {
-    char inpcar;
-    scanf("%c",&inpcar);
-    int result = char_to_ascii(inpcar);
-    printf("%d",result);
+    int 
     return 0;
 }
